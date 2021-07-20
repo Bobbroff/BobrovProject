@@ -14,9 +14,5 @@ public class Point {
         this.y2 = y2;
     }
 
-    public  double area (){
-
-        return Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
-    }
 
 }

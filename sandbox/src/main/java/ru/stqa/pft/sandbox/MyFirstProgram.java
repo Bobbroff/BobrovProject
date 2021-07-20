@@ -13,9 +13,13 @@ public class MyFirstProgram {
 	    Rectangle r = new Rectangle(4, 6);
 	    System.out.println("Площадь прямугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
-	    Point p = new Point(10,5,3,6);
-	    System.out.println("Растояние между точками на плоскости = " + p.area());
+	    Point p = new Point();
+	    System.out.println("Растояние между точками на плоскости = " + distance(p));
     }
+
+	public static double distance (Point p){
+		return Math.sqrt((p.y2 - p.y1) * (p.y2 - p.y1) + (p.x2 - p.x1) * (p.x2 - p.x1));
+	}
 
     public static void hello(String somebody){
 		System.out.println("Hello, " + somebody + "!");
